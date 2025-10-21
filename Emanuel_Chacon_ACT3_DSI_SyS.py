@@ -1,7 +1,7 @@
 # ============================================================
 # ACTIVIDAD FORMATIVA 3 - FILTROS DIGITALES
 # Lenguaje: Python
-# Objetivo: Disenar y evaluar filtros pasa bajos pasa altos y pasa bandas
+# Objetivo: Diseñar y evaluar filtros pasa bajos pasa altos y pasa bandas
 # ============================================================
 
 import numpy as np
@@ -33,7 +33,7 @@ plt.grid()
 plt.show()
 
 # ------------------------------------------------------------
-# 2 Diseno de los filtros digitales
+# 2 Diseño de los filtros digitales
 # ------------------------------------------------------------
 
 # parametros de diseno
@@ -61,7 +61,7 @@ filtered_band = lfilter(b_band, 1.0, noisy_signal)
 plt.figure(figsize=(12,8))
 plt.subplot(4,1,1)
 plt.plot(t, noisy_signal, color='gray')
-plt.title('Senal original con ruido')
+plt.title('Señal original con ruido')
 
 plt.subplot(4,1,2)
 plt.plot(t, filtered_low, color='b')
